@@ -40,9 +40,15 @@
     /* Left */ inset -10px 0 10px rgba(0, 0, 0, 0.25); /* Right */
 }
 
-.stick_boy {
-  position: -webkit-fixed; /* Safari */
-  position: fixed;
-  /* top: 0; */
+.sticky_para {
+  position: sticky;
+  margin-top: -100vh;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  top: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
