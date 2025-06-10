@@ -39,3 +39,10 @@
     /* Bottom */ inset 10px 0 10px rgba(0, 0, 0, 0.25),
     /* Left */ inset -10px 0 10px rgba(0, 0, 0, 0.25); /* Right */
 }
+
+.stick_boy {
+  position: -webkit-fixed; /* Safari */
+  position: fixed;
+  /* top: 0; */
+}
+
