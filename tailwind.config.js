@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bg': "url('../assets')",
+        'parallax1': "url('../assets/images/backgrounds/temp-background-image.jpg')",
+        'parallax2': "url('../assets/images/backgrounds/rates-image.jpg')",
       },
       boxShadow: {
         input: 'inset 1px 1px 6px 1px #00000014',

@@ -13,16 +13,17 @@ const HomePage = React.memo(() => {
     <>
       {/* Page */}
       <div className='grid min-h-screen overflow-hidden bg-colour1 text-colour2 dark:bg-colour2 dark:text-colour1 font-poppins'>
-        <div className='grid'>
+        <div className='grid grid-rows-reg min-h-screen h-full w-full'>
           {/* Navigation */}
           <Navbar />
-
-          {/* Main page content */}
-          <HomePageMainContainer />
-
-          {/* Footer */}
-          <FooterComponent />
+          <header className='grid h-full bg-colour4'>Header</header>
         </div>
+
+        {/* Main page content */}
+        <HomePageMainContainer />
+
+        {/* Footer */}
+        <FooterComponent />
       </div>
     </>
   );
