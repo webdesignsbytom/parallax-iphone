@@ -21,6 +21,7 @@ import TermAndPoliciesPage from './pages/policies/TermAndPoliciesPage';
 import MaintenancePage from './pages/maintenance/MaintenancePage';
 // Error
 import Error404 from './pages/error/Error404';
+import HomePage2 from './pages/home/HomePage2';
 
 // Components
 const CookieConsentModal = lazy(() =>
@@ -68,6 +69,7 @@ function App() {
         <Routes>
           {/* Main page routes */}
           <Route path={HOME_PAGE_URL} index element={<HomePage />} />
+          <Route path={`/2`} element={<HomePage2 />} />
 
           {/* Terms and conditions */}
           <Route path={POLICIES_PAGE_URL} element={<TermAndPoliciesPage />} />
