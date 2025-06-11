@@ -11,13 +11,19 @@ const HomePage = React.memo(() => {
 
   return (
     <>
-      {/* Fixed Background Layer */}
-      <div className="fixed top-0 left-0 w-full h-screen bg-parallax1 bg-cover bg-center bg-no-repeat -z-10" />
+      {/* Page */}
+      <div className='grid min-h-screen overflow-hidden bg-colour1 text-colour2 dark:bg-colour2 dark:text-colour1 font-poppins'>
+        <div className='grid grid-rows-reg min-h-screen h-full w-full'>
+          {/* Navigation */}
+          <Navbar />
+          <header className='grid h-full bg-colour4'>Header</header>
+        </div>
 
-      {/* Main Page */}
-      <div className="relative z-10 grid min-h-screen font-poppins">
-        <div className='grid min-h-screen bg-white'>HELLO</div>
+        {/* Main page content */}
         <HomePageMainContainer />
+
+        {/* Footer */}
+        <FooterComponent />
       </div>
     </>
   );
